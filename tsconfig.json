@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolvePackageJsonExports": true, 
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "types": ["node", "vitest/globals"], 
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@common/*": ["./src/common/*"],
+      "@decorators/*": ["./src/common/decorators/*"],
+      "@exceptions/*": ["./src/common/exceptions/*"],
+      "@interceptors/*": ["./src/common/interceptors/*"],
+      "@transformers/*": ["./src/common/transformers/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@config/*": ["./src/lib/config/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@/*": ["./src/*"]
+    }
+  }
+}

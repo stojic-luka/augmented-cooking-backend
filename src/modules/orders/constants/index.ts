@@ -1,0 +1,2 @@
+export const ORDERS_SERVICE_TOKEN = Symbol('ORDERS_SERVICE');
+export const GROCERY_PARTNER_TOKEN = Symbol('GROCERY_PARTNER');

@@ -1,0 +1,1 @@
+export const BILLING_SERVICE_TOKEN = Symbol('BILLING_SERVICE');

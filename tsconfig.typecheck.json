@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolvePackageJsonExports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "incremental": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "types": [
+      "vitest/globals",
+      "node"
+    ],
+    "paths": {
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@decorators/*": [
+        "./src/common/decorators/*"
+      ],
+      "@exceptions/*": [
+        "./src/common/exceptions/*"
+      ],
+      "@interceptors/*": [
+        "./src/common/interceptors/*"
+      ],
+      "@transformers/*": [
+        "./src/common/transformers/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "@config/*": [
+        "./src/lib/config/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "test"
+  ]
+}
