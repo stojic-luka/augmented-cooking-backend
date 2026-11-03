@@ -1,6 +1,6 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
 import { SupabaseClient } from '@supabase/supabase-js';
-import { SUPABASE_CLIENT } from '@modules/supabase';
+import { SUPABASE_CLIENT } from '../../supabase';
 import { BadRequestException } from '@nestjs/common';
 import type { BillingIntentResult, PurchaseTokensDto, SubscribeDto } from '../dtos';
 import type { IBillingService } from '../interfaces';

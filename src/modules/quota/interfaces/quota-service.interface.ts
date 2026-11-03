@@ -1,4 +1,4 @@
-import { AiActionType, AiModelRoute } from '@modules/ai';
+import { AiActionType, AiModelRoute } from '../../ai';
 
 export interface QuotaReservation {
   usageId: string;

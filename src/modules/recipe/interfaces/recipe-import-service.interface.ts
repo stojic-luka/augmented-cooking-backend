@@ -1,4 +1,4 @@
-import type { RecipeDraft } from '@modules/ai';
+import type { RecipeDraft } from '../../ai';
 
 export interface ImportRecipeParams {
   userId: string;

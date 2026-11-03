@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { PostgrestError, SupabaseClient } from '@supabase/supabase-js';
-import { SUPABASE_CLIENT } from '@modules/supabase';
-import { AiActionType } from '@modules/ai';
+import { SUPABASE_CLIENT } from '../../supabase';
+import { AiActionType } from '../../ai';
 
 interface RpcResult<T> {
   data: T;

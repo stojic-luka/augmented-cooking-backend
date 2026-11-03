@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { SupabaseClient } from '@supabase/supabase-js';
-import { SUPABASE_CLIENT } from '@modules/supabase';
+import { SUPABASE_CLIENT } from '../../supabase';
 import {
   AiModelDto,
   AiModelRecord,

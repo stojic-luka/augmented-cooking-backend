@@ -1,10 +1,10 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { AI_SERVICE_TOKEN } from '@modules/ai';
-import type { AiProviderType, AiRequestOptions, ChatMessage, IAiService } from '@modules/ai';
-import { QUOTA_SERVICE_TOKEN } from '@modules/quota';
-import type { IQuotaService, QuotaReservation } from '@modules/quota';
-import { getErrorMessage } from '@utils/index';
+import { AI_SERVICE_TOKEN } from '../../ai';
+import type { AiProviderType, AiRequestOptions, ChatMessage, IAiService } from '../../ai';
+import { QUOTA_SERVICE_TOKEN } from '../../quota';
+import type { IQuotaService, QuotaReservation } from '../../quota';
+import { getErrorMessage } from '../../../utils/index';
 import { CHAT_SYSTEM_PROMPT } from '../prompts';
 import type { SendChatMessageDto, SendChatMessageResult, StreamChatMessageResult } from '../dtos';
 import type { IChatService } from '../interfaces';

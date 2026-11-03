@@ -1,7 +1,7 @@
 import { Body, Controller, HttpCode, HttpStatus, Inject, Post, UseGuards } from '@nestjs/common';
 import type { AuthUser } from '@supabase/supabase-js';
-import { GetAbortSignal, GetCurrentUser } from '@common/decorators/request';
-import { SupabaseAuthGuard } from '@modules/auth';
+import { GetAbortSignal, GetCurrentUser } from '../../../common/decorators/request';
+import { SupabaseAuthGuard } from '../../auth';
 import { AnalyzeNutritionBodyDto, EditRecipeBodyDto, GenerateRecipeBodyDto } from '../dtos';
 import type { IRecipeAiService } from '../interfaces';
 import { RECIPE_AI_SERVICE_TOKEN } from '../constants';

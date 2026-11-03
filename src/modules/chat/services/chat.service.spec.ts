@@ -1,8 +1,8 @@
 import type { Mock } from 'vitest';
 import type { ConfigService } from '@nestjs/config';
-import type { AiStreamChunk } from '@modules/ai';
-import { AiProviderType, type IAiService, type AiCompleteResponse } from '@modules/ai';
-import type { IQuotaService, QuotaReservation } from '@modules/quota';
+import type { AiStreamChunk } from '../../ai';
+import { AiProviderType, type IAiService, type AiCompleteResponse } from '../../ai';
+import type { IQuotaService, QuotaReservation } from '../../quota';
 import { ChatService } from './chat.service';
 
 const RESERVATION: QuotaReservation = {

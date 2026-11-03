@@ -1,4 +1,4 @@
-import { RecipeDraft, recipeDraftSchema } from '@modules/ai';
+import { RecipeDraft, recipeDraftSchema } from '../../ai';
 import { parseRecipeDraft } from './parse-recipe-draft';
 
 /** schema.org `suitableForDiet` value → app `dietary_tag` vocabulary. */

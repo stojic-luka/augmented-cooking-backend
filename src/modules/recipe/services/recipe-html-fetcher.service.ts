@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { RecipeImportException } from '@exceptions/index';
+import { RecipeImportException } from '../../../common/exceptions/index';
 import { UrlGuardService } from './url-guard.service';
 
 const MAX_REDIRECTS = 3;

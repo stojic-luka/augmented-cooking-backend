@@ -1,7 +1,7 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import type { AuthUser } from '@supabase/supabase-js';
-import { SupabaseAuthGuard } from '@modules/auth';
-import { GetCurrentUser } from '@common/decorators/request';
+import { SupabaseAuthGuard } from '../../auth';
+import { GetCurrentUser } from '../../../common/decorators/request';
 import { AiModelsResponse } from '../ai.models';
 import { AiModelCatalogService } from '../services';
 

@@ -1,8 +1,8 @@
 import { CanActivate, ExecutionContext, Inject, Injectable } from '@nestjs/common';
 import { AuthUser, SupabaseClient } from '@supabase/supabase-js';
 import { Request } from 'express';
-import { SUPABASE_CLIENT } from '@modules/supabase';
-import { InvalidAccessTokenException } from '@exceptions/index';
+import { SUPABASE_CLIENT } from '../../supabase';
+import { InvalidAccessTokenException } from '../../../common/exceptions/index';
 
 /**
  * Validates the Supabase access token against the auth server and exposes the

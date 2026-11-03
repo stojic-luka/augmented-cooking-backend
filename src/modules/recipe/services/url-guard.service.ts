@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { lookup } from 'node:dns/promises';
 import { isIP } from 'node:net';
-import { InvalidRecipeUrlException } from '@exceptions/index';
+import { InvalidRecipeUrlException } from '../../../common/exceptions/index';
 
 const PRIVATE_IPV4_PATTERNS: Array<(parts: number[]) => boolean> = [
   (p) => p[0] === 10,

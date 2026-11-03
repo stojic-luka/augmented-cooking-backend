@@ -11,9 +11,9 @@ import {
 } from '@nestjs/common';
 import type { AuthUser } from '@supabase/supabase-js';
 import type { Response } from 'express';
-import { GetAbortSignal, GetCurrentUser } from '@common/decorators/request';
-import { SupabaseAuthGuard } from '@modules/auth';
-import { getErrorMessage } from '@utils/index';
+import { GetAbortSignal, GetCurrentUser } from '../../../common/decorators/request';
+import { SupabaseAuthGuard } from '../../auth';
+import { getErrorMessage } from '../../../utils/index';
 import { CHAT_SERVICE_TOKEN } from '../constants';
 import { SendChatMessageBodyDto } from '../dtos';
 import type { IChatService } from '../interfaces';

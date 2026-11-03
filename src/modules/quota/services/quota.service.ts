@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { AiActionType, AiModelCatalogService } from '@modules/ai';
-import { QuotaExceededException } from '@exceptions/index';
+import { AiActionType, AiModelCatalogService } from '../../ai';
+import { QuotaExceededException } from '../../../common/exceptions/index';
 import { QuotaRepository } from '../repositories';
 import type { IQuotaService, QuotaReservation } from '../interfaces';
 

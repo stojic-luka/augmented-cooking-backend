@@ -1,8 +1,8 @@
 import { BadRequestException, Inject, Injectable, Logger } from '@nestjs/common';
-import { AiJsonService, RecipeDraft } from '@modules/ai';
-import { QUOTA_SERVICE_TOKEN, type QuotaReservation } from '@modules/quota';
-import type { IQuotaService } from '@modules/quota';
-import { getErrorMessage } from '@utils/index';
+import { AiJsonService, RecipeDraft } from '../../ai';
+import { QUOTA_SERVICE_TOKEN, type QuotaReservation } from '../../quota';
+import type { IQuotaService } from '../../quota';
+import { getErrorMessage } from '../../../utils/index';
 import {
   EDIT_RECIPE_RESPONSE_JSON_SCHEMA,
   NUTRITION_ANALYSIS_JSON_SCHEMA,

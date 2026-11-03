@@ -1,9 +1,9 @@
 import type { INestApplication } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import supertest from 'supertest';
-import { AppModule } from '@/app.module';
-import { SupabaseAuthGuard } from '@modules/auth';
-import { SUPABASE_CLIENT } from '@modules/supabase';
+import { AppModule } from '../../src/app.module';
+import { SupabaseAuthGuard } from '../../src/modules/auth';
+import { SUPABASE_CLIENT } from '../../src/modules/supabase';
 import {
   createFakeSupabaseClient,
   type FakeSupabaseClient,

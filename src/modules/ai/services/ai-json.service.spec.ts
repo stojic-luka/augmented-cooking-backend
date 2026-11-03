@@ -3,7 +3,7 @@ import { z } from 'zod';
 import type { ConfigService } from '@nestjs/config';
 import type { IAiService } from '../interfaces';
 import type { AiCompleteResponse, AiRequestOptions } from '../types';
-import { AiResponseInvalidException, AiUnavailableException } from '@exceptions/index';
+import { AiResponseInvalidException, AiUnavailableException } from '../../../common/exceptions/index';
 import { AiJsonService } from './ai-json.service';
 
 const RESPONSE_SCHEMA = {

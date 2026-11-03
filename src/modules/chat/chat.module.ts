@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { AiModule } from '@modules/ai';
-import { QuotaModule } from '@modules/quota';
+import { AiModule } from '../ai';
+import { QuotaModule } from '../quota';
 import { ChatController } from './controllers';
 import { CHAT_SERVICE_TOKEN } from './constants';
 import { ChatService } from './services';

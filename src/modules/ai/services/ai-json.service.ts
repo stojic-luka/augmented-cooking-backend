@@ -3,7 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { AI_SERVICE_TOKEN } from '../constants';
 import type { IAiService } from '../interfaces';
 import type { AiRequestOptions, ChatMessage } from '../types';
-import { AiResponseInvalidException, AiUnavailableException } from '@exceptions/index';
+import { AiResponseInvalidException, AiUnavailableException } from '../../../common/exceptions/index';
 
 interface ValidatedGeneration<T> {
   data: T;

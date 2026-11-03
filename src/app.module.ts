@@ -1,17 +1,17 @@
 import { Module, ValidationPipe } from '@nestjs/common';
 import { APP_FILTER, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import { ConfigModule } from '@nestjs/config';
-import { aiConfig, globalConfig, supabaseConfig } from '@config/index';
-import { ApiExceptionFilter } from '@common/filters/api-exception.filter';
-import { RequestCancellationInterceptor } from '@common/interceptors/request';
-import { AiModule } from '@modules/ai';
-import { AuthModule } from '@modules/auth';
-import { BillingModule } from '@modules/billing';
-import { ChatModule } from '@modules/chat';
-import { OrdersModule } from '@modules/orders';
-import { QuotaModule } from '@modules/quota';
-import { RecipesModule } from '@modules/recipe';
-import { SupabaseModule } from '@modules/supabase';
+import { aiConfig, globalConfig, supabaseConfig } from './lib/config/index';
+import { ApiExceptionFilter } from './common/filters/api-exception.filter';
+import { RequestCancellationInterceptor } from './common/interceptors/request';
+import { AiModule } from './modules/ai';
+import { AuthModule } from './modules/auth';
+import { BillingModule } from './modules/billing';
+import { ChatModule } from './modules/chat';
+import { OrdersModule } from './modules/orders';
+import { QuotaModule } from './modules/quota';
+import { RecipesModule } from './modules/recipe';
+import { SupabaseModule } from './modules/supabase';
 // import { MetricsModule } from 'apm-optima/nest';
 
 @Module({

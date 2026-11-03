@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { AiModule } from '@modules/ai';
-import { QuotaModule } from '@modules/quota';
+import { AiModule } from '../ai';
+import { QuotaModule } from '../quota';
 import { RecipeAiController, RecipesController } from './controllers';
 import { RECIPE_AI_SERVICE_TOKEN, RECIPE_IMPORT_SERVICE_TOKEN } from './constants';
 import {

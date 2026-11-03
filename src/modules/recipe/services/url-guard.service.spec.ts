@@ -1,6 +1,6 @@
 import type { Mock } from 'vitest';
 import { lookup } from 'node:dns/promises';
-import { InvalidRecipeUrlException } from '@exceptions/index';
+import { InvalidRecipeUrlException } from '../../../common/exceptions/index';
 import { UrlGuardService } from './url-guard.service';
 
 vi.mock('node:dns/promises', () => ({ lookup: vi.fn() }));

@@ -3,7 +3,7 @@ vi.mock('@lib/recipe-scrapers', () => ({ loadRecipeScrapers: vi.fn() }));
 
 import type { Mock } from 'vitest';
 import { lookup } from 'node:dns/promises';
-import { loadRecipeScrapers } from '@lib/recipe-scrapers';
+import { loadRecipeScrapers } from '../src/lib/recipe-scrapers';
 import { createTestApp, type TestApp } from './helpers/e2e-app.js';
 
 const mockLookup = lookup as unknown as Mock;

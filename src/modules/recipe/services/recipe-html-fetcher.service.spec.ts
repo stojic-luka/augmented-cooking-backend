@@ -1,5 +1,5 @@
 import type { Mock } from 'vitest';
-import { RecipeImportException } from '@exceptions/index';
+import { RecipeImportException } from '../../../common/exceptions/index';
 import { RecipeHtmlFetcherService } from './recipe-html-fetcher.service';
 import { UrlGuardService } from './url-guard.service';
 

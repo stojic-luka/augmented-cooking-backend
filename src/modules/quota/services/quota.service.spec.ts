@@ -1,7 +1,7 @@
 import type { Mock } from 'vitest';
-import type { AiModelCatalogService } from '@modules/ai';
+import type { AiModelCatalogService } from '../../ai';
 import type { ConfigService } from '@nestjs/config';
-import { QuotaExceededException } from '@exceptions/index';
+import { QuotaExceededException } from '../../../common/exceptions/index';
 import type { QuotaRepository } from '../repositories';
 import type { QuotaReservation } from '../interfaces';
 import { QuotaService } from './quota.service';

@@ -1,7 +1,7 @@
 import { Body, Controller, HttpCode, HttpStatus, Inject, Post, UseGuards } from '@nestjs/common';
 import type { AuthUser } from '@supabase/supabase-js';
-import { GetCurrentUser } from '@common/decorators/request';
-import { SupabaseAuthGuard } from '@modules/auth';
+import { GetCurrentUser } from '../../../common/decorators/request';
+import { SupabaseAuthGuard } from '../../auth';
 import { BILLING_SERVICE_TOKEN } from '../constants';
 import { PurchaseTokensBodyDto, SubscribeBodyDto } from '../dtos';
 import type { IBillingService } from '../interfaces';

@@ -1,4 +1,4 @@
-import type { AiModelRoute, NutritionAnalysis, RecipeDraft } from '@modules/ai';
+import type { AiModelRoute, NutritionAnalysis, RecipeDraft } from '../../../ai';
 
 export interface GenerateRecipeDto {
   userId: string;

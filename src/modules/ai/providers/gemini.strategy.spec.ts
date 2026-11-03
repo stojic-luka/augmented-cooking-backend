@@ -1,6 +1,6 @@
 import type { Mock } from 'vitest';
 import type { ConfigService } from '@nestjs/config';
-import { AiUnavailableException } from '@exceptions/index';
+import { AiUnavailableException } from '../../../common/exceptions/index';
 import type { AiRequestOptions, ChatMessage } from '../types';
 import { GeminiStrategy } from './gemini.strategy';
 

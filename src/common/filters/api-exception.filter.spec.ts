@@ -1,7 +1,7 @@
 import { BadRequestException, ForbiddenException, HttpException } from '@nestjs/common';
 import type { ArgumentsHost } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { AiUnavailableException, QuotaExceededException } from '@exceptions/index';
+import { AiUnavailableException, QuotaExceededException } from '../exceptions/index';
 import { ApiExceptionFilter } from './api-exception.filter';
 
 function createHost(request: Partial<Request>) {

@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { AiModule } from '@modules/ai';
+import { AiModule } from '../ai';
 import { QUOTA_SERVICE_TOKEN } from './constants';
 import { QuotaRepository } from './repositories';
 import { QuotaService } from './services';

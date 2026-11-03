@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "module": "commonjs",
     "resolvePackageJsonExports": true, 
     "esModuleInterop": true,
     "isolatedModules": true,
@@ -10,7 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2023",
+    "target": "ES2022",
     "types": ["node", "vitest/globals"], 
     "sourceMap": true,
     "outDir": "./dist",

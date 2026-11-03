@@ -1,7 +1,7 @@
 import type { Mock } from 'vitest';
 import { BadRequestException } from '@nestjs/common';
-import { AiJsonService, type RecipeDraft } from '@modules/ai';
-import type { IQuotaService, QuotaReservation } from '@modules/quota';
+import { AiJsonService, type RecipeDraft } from '../../ai';
+import type { IQuotaService, QuotaReservation } from '../../quota';
 import type { GenerateRecipeDto } from '../dtos';
 import { RecipeAiService } from './recipe-ai.service';
 

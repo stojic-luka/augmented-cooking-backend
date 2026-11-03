@@ -4,7 +4,7 @@ import {
   RecipeDraft,
   nutritionAnalysisSchema,
   recipeDraftSchema,
-} from '@modules/ai';
+} from '../../ai';
 
 const looseNumber = z.union([z.number(), z.string()]).transform(Number);
 

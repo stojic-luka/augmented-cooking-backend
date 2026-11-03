@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { RecipeDraft } from '@modules/ai';
-import { RecipeImportException } from '@exceptions/index';
+import { RecipeDraft } from '../../ai';
+import { RecipeImportException } from '../../../common/exceptions/index';
 import { normalizeScrapedRecipe } from '../schemas/scraped-recipe.mapper';
 import { RecipeHtmlFetcherService } from './recipe-html-fetcher.service';
-import { loadRecipeScrapers } from '@lib/recipe-scrapers';
+import { loadRecipeScrapers } from '../../../lib/recipe-scrapers';
 import type { ImportRecipeParams, IRecipeImportService } from '../interfaces';
 
 /**

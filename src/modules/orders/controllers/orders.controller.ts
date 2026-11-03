@@ -1,7 +1,7 @@
 import { Body, Controller, HttpCode, HttpStatus, Inject, Post, UseGuards } from '@nestjs/common';
 import type { AuthUser } from '@supabase/supabase-js';
-import { GetCurrentUser } from '@common/decorators/request';
-import { SupabaseAuthGuard } from '@modules/auth';
+import { GetCurrentUser } from '../../../common/decorators/request';
+import { SupabaseAuthGuard } from '../../auth';
 import { ORDERS_SERVICE_TOKEN } from '../constants';
 import { CreateOrderBodyDto } from '../dtos';
 import type { IOrdersService } from '../interfaces';

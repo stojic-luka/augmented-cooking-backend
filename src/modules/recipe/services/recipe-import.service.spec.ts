@@ -1,12 +1,12 @@
 import type { Mock } from 'vitest';
-import type { RecipeDraft } from '@modules/ai';
-import { RecipeImportException } from '@exceptions/index';
+import type { RecipeDraft } from '../../ai';
+import { RecipeImportException } from '../../../common/exceptions/index';
 import { RecipeHtmlFetcherService } from './recipe-html-fetcher.service';
 import { RecipeImportService } from './recipe-import.service';
 
 vi.mock('@lib/recipe-scrapers', () => ({ loadRecipeScrapers: vi.fn() }));
 
-import { loadRecipeScrapers } from '@lib/recipe-scrapers';
+import { loadRecipeScrapers } from '../../../lib/recipe-scrapers';
 
 const mockLoad = loadRecipeScrapers as unknown as Mock;
 

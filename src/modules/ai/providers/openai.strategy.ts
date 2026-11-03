@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 import { randomUUID } from 'node:crypto';
 import { Injectable } from '@nestjs/common';
-import { AiUnavailableException } from '@exceptions/index';
+import { AiUnavailableException } from '../../../common/exceptions/index';
 import { ConfigService } from '@nestjs/config';
 import { AiProviderStrategy } from '../contracts';
 import {
