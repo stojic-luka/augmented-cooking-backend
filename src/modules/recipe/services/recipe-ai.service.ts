@@ -124,7 +124,6 @@ export class RecipeAiService implements IRecipeAiService {
     const reservation = await this.quotaService.reserve({
       userId: params.userId,
       action: 'import_recipe',
-      modelId: params.modelId,
     });
 
     try {
