@@ -1,8 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { RecipeDraft } from '../../ai';
 import { RecipeImportException } from '../../../common/exceptions/index';
 import { RecipeHtmlFetcherService } from './recipe-html-fetcher.service';
 import type { ImportRecipeParams, IRecipeAiService, IRecipeImportService } from '../interfaces';
+import { RECIPE_AI_SERVICE_TOKEN } from '../constants';
 
 /**
  * Scrapes a recipe from a public URL. Parsing is done by `recipe-scrapers`
@@ -13,6 +14,7 @@ import type { ImportRecipeParams, IRecipeAiService, IRecipeImportService } from 
 @Injectable()
 export class RecipeImportService implements IRecipeImportService {
   constructor(
+    @Inject(RECIPE_AI_SERVICE_TOKEN)
     private readonly recipeAiService: IRecipeAiService,
     private readonly htmlFetcher: RecipeHtmlFetcherService,
   ) {}
