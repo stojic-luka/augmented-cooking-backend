@@ -14,6 +14,7 @@ export interface AiModelRoute {
 export const aiActionTypeSchema = z.enum([
   'generate_recipe',
   'edit_recipe',
+  'import_recipe',
   'nutrition_analysis',
   'substitute_ingredient',
   'recommend',

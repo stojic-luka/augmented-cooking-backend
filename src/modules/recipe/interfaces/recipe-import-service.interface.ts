@@ -4,6 +4,7 @@ export interface ImportRecipeParams {
   userId: string;
   signal: AbortSignal;
   url: string;
+  modelId?: string;
 }
 
 export interface IRecipeImportService {

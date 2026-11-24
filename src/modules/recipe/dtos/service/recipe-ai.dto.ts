@@ -19,6 +19,14 @@ export interface EditRecipeDto {
   modelId?: string;
 }
 
+export interface ExtractRecipeFromHtmlDto {
+  html: string;
+  sourceUrl: string;
+  userId: string;
+  modelId?: string;
+  signal: AbortSignal;
+}
+
 export interface AnalyzeNutritionDto {
   userId: string;
   signal: AbortSignal;
